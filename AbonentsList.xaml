@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phones.AbonentsList">
+
+    <HorizontalStackLayout>
+        <VerticalStackLayout WidthRequest="800">
+            <HorizontalStackLayout>
+                <Label
+                    Margin="20"
+                    Text="Абоненты"
+                    TextColor="Green"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    WidthRequest="550"/>
+
+                <Button              
+                    Text="Добавить абонента" 
+                    Clicked="AddAbonent"
+                    HorizontalOptions="Center" 
+                    BackgroundColor="Green"
+                    HeightRequest="50"  
+                    WidthRequest="170"/>
+            </HorizontalStackLayout>
+
+
+            <Grid x:Name="grid" Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+
+                </Grid.ColumnDefinitions>
+
+                <!-- Динамически добавляемые строки будут тут -->
+            </Grid>
+
+           
+
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</ContentPage>

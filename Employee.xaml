@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phones.Employee"
+             Title="">
+
+    <HorizontalStackLayout>
+
+        <VerticalStackLayout  WidthRequest="500">
+            <Label
+                Text="Личный кабинет сотрудника"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+            <Label
+                Text="Количество звонков"
+                Margin="20"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <HorizontalStackLayout HeightRequest="300">
+                <VerticalStackLayout>
+                    <Label
+                        Text="Ночь"
+                        Margin="20"
+                        TextColor="Blue"
+                        FontSize="Large"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label
+                         Text="День"
+                         Margin="20"
+                         TextColor="Green"
+                         FontSize="Large"
+                         HorizontalOptions="End"
+                         VerticalOptions="Start"/>
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+
+            <Button              
+                Text="Начисления" 
+   
+                Margin="20"
+                FontSize="25" 
+                HorizontalOptions="Center" 
+                BackgroundColor="Green"
+                HeightRequest="50"  
+                WidthRequest="300"/>
+
+
+
+
+
+        </VerticalStackLayout>
+
+        <StackLayout Padding="15">
+
+            <Image
+                Source="enter.jpeg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>   
+
+            <Label
+                x:Name="time"
+                Margin="20"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <Label
+                x:Name="data"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <Button              
+                Text="Абоненты" 
+                Clicked="AbonentsClicked"
+                Margin="20"
+                FontSize="25" 
+                HorizontalOptions="End" 
+                BackgroundColor="Green"
+                HeightRequest="50"  
+                WidthRequest="150"/>
+
+            <Button              
+                Text="Тарифы" 
+                Clicked="CitiesClicked"
+                Margin="20"
+                FontSize="25" 
+                HorizontalOptions="End" 
+                BackgroundColor="Green"
+                HeightRequest="50"  
+                WidthRequest="150"/>
+
+
+        </StackLayout>
+
+    </HorizontalStackLayout>
+
+
+
+
+
+</ContentPage>
