@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phones.Abonent"
+             Title="">
+    <HorizontalStackLayout>
+
+        <VerticalStackLayout  WidthRequest="450">
+            <Label
+                Margin="20"
+                Text="Личный кабинет"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+            <Label
+                x:Name="errornum"
+                Text=""
+                FontSize="20" 
+                TextColor="Red"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+
+
+            <HorizontalStackLayout Padding="40">
+                <Entry 
+                    x:Name="num"
+                    Margin="10"
+                    WidthRequest="400"
+                    Placeholder = "Номер телефона" 
+                    FontFamily="Helvetica"
+                    FontSize="22" 
+                    MaxLength ="20" 
+                    IsEnabled="False"/>
+            </HorizontalStackLayout>
+            <VerticalStackLayout  WidthRequest="400" Padding="10">
+                <HorizontalStackLayout Padding="10">
+                    <Button   
+                        x:Name="g"
+                        Text="7" 
+                        Clicked="EnterClicked7"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button 
+                        x:Name="q"
+                        Text="8" 
+                        Clicked="EnterClicked8"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button    
+                        x:Name="r"
+                        Text="9" 
+                        Clicked="EnterClicked9"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Padding="10">
+                    <Button   
+                        x:Name="d"
+                        Text="4" 
+                        Clicked="EnterClicked4"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button  
+                        x:Name="o"
+                        Text="5" 
+                        Clicked="EnterClicked5"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button   
+                        x:Name="f"
+                        Text="6" 
+                        Clicked="EnterClicked6"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Padding="10">
+                    <Button     
+                        x:Name="a"
+                        Text="1"
+                        Clicked="EnterClicked1"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button       
+                        x:Name="b"
+                        Text="2" 
+                        Clicked="EnterClicked2"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button  
+                        x:Name="c"
+                        Text="3" 
+                        Clicked="EnterClicked3"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Padding="10">
+                    <Button              
+                        Text="" 
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="White"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button 
+                        x:Name="n"
+                        Text="0" 
+                        Clicked="EnterClicked10"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                    <Button              
+                        Text="&lt;" 
+                        Clicked="Clear"
+                        FontSize="25" 
+                        HorizontalOptions="Center" 
+                        BackgroundColor="Green"
+                        HeightRequest="50"  
+                        WidthRequest="100"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+
+        <StackLayout Padding="15">
+            <Image
+                x:Name="timeImage"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <Label
+                x:Name="timeLabel"
+                Margin="20"
+
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <Button              
+                Text="Вызов" 
+                Clicked="EnterClicked"
+                Margin="20"
+                FontSize="25" 
+                HorizontalOptions="Center" 
+                BackgroundColor="Green"
+                HeightRequest="50"  
+                WidthRequest="150"/>
+
+
+            <Button              
+                 Text="История звонков" 
+                 Clicked="EnterClicked"
+                 Margin="10"
+                 FontSize="25" 
+                 HorizontalOptions="Center" 
+                 BackgroundColor="Green"
+                 HeightRequest="50"  
+                 WidthRequest="250"/>
+            <Button              
+                 Text="Счета на оплату" 
+                 Clicked="EnterClicked"
+                 Margin="10"
+                 FontSize="25" 
+                 HorizontalOptions="Center" 
+                 BackgroundColor="Green"
+                 HeightRequest="50"  
+                 WidthRequest="250"/>   
+        </StackLayout>
+
+    </HorizontalStackLayout>
+        
+    
+
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phones.Call"
+             Title="">
+    <HorizontalStackLayout>
+
+        <VerticalStackLayout  WidthRequest="400">
+            <Label
+                Margin="20"
+                Text="Вызов"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+
+
+
+            
+            <Entry 
+                x:Name="numcall"
+                Margin="10"
+                WidthRequest="300"
+                Placeholder = "Номер телефона" 
+                FontFamily="Helvetica"
+                FontSize="22" 
+                MaxLength ="20" 
+                IsEnabled="False"/>
+
+            <Label
+                x:Name="timeCall"
+                Margin="20"
+                Text="00:00:00"
+                TextColor="Green"
+                FontSize="Large"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>   
+
+            <Button              
+                Text="Завершить" 
+                Clicked="Abort"
+                FontSize="25" 
+                HorizontalOptions="Center" 
+                BackgroundColor="Red"
+                HeightRequest="50"  
+                WidthRequest="200"/>    
+            
+           
+
+
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout Padding="50">
+            <Image
+                Source="call.png"
+                HeightRequest="300"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                />  
+
+        </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+        
+    
+
+</ContentPage>

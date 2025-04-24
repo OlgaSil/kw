@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phones.MainPage"
+             Title="">
+    <HorizontalStackLayout Padding="20">
+
+        <VerticalStackLayout  WidthRequest="400">
+            <Label
+                Text="Вход"
+                FontSize="44" 
+                TextColor="Green"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+            <Label
+                x:Name="error"
+                Text=""
+                FontSize="20" 
+                TextColor="Red"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>   
+
+
+            <HorizontalStackLayout Padding="40">
+                <Label
+                    WidthRequest="120"
+                    Text="Логин"
+                    TextColor="Green"
+                    FontSize="Large"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"/>
+                <Entry 
+                    x:Name="log"
+                    Margin="10"
+                    WidthRequest="200"
+                    Placeholder = "Введите логин" 
+                    FontFamily="Helvetica"
+                    FontSize="22" 
+                    MaxLength ="20" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="40">
+                <Label
+                    WidthRequest="120"
+                    Text="Пароль"
+                    TextColor="Green"
+                    FontSize="Large"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"/>
+                <Entry 
+                    x:Name="pass"
+                    Margin="10"
+                    WidthRequest="200"
+                    Placeholder = "Введите пароль" 
+                    FontFamily="Helvetica"
+                    FontSize="22" 
+                    MaxLength ="20"
+                    IsPassword="True"/>
+            </HorizontalStackLayout>
+
+            
+
+            <Button              
+                Text="Войти" 
+                Clicked="EnterClicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="Green"
+                HeightRequest="50"  
+                WidthRequest="150"/>
+   
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Padding="50">
+            <Image
+            Source="telephone.jpeg"
+            HeightRequest="300"
+            Aspect="AspectFit"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            />
+
+        </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+
+</ContentPage>
